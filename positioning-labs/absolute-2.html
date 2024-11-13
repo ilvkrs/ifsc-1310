@@ -16,6 +16,11 @@ body {
 	text-align: center;
 	line-height: 24px;
 }
+#wrapper > div {
+	width:125px;
+	height:125px;
+	position:absolute;
+}
 #wrapper {
 	background-color: #FFF;
 	border-top-width: 1px;
@@ -26,24 +31,50 @@ body {
 	border-right-style: solid;
 	border-bottom-style: solid;
 	border-left-style: solid;
-	width: 800px;
+	width: 80vw;
+	height:80vh;
 	margin-right: auto;
 	margin-left: auto;
+	position:relative;
 }
-#red {
-	background-color: #900;
+#blush-red {
+	background-color: #E86B93;
+	position:absolute;
+	width:125px;
+	height:125px;
+	top:0;
+	left:0;
 }
-#green {
-	background-color: #090;
+#tacao {
+	background-color: #F2B988;
+	position:absolute;
+	width:125px;
+	height:125px;
+	top:0;
+	right:0;
 }
-#blue {
-	background-color: #00F;
+#almond {
+	background-color: #F2E0D0;
+	position:absolute;
+	width:125px;
+	height:125px;
+	bottom:0;
+	left:0;
 }
-#purple {
-	background-color: #63C;
+#orange-salmon {
+	background-color: #BF7D56;
+	position:absolute;
+	width:125px;
+	height:125px;
+	bottom:0;
+	right:0;
 }
-#footer {
+div#footer {
 	background-color: #666;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+
 }
 h1 {
 	color: #000;
@@ -54,12 +85,12 @@ h1 {
 </head>
 
 <body>
-<h1>Exercise 1</h1>
+<h1>Exercise 4</h1>
 <div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
+  <div id="blush-red">Blush Red</div>
+  <div id="tacao">Tacao</div>
+  <div id="almond">Almond</div>
+  <div id="orange-salmon">Orange Salmon</div>
   <div id="footer">Footer</div>
 </div>
 </body>
