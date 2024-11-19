@@ -1,5 +1,323 @@
-/* CSS Demo Stylesheet */
+/*  ---------------Box Sizing-----------------  */
 
-body{
-    background-color:grey;
-}
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /*  ---------------Responsive Images-----------------  */
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /*  ---------------Utility Classes-----------------  */
+  
+  .container {
+    width: 80vw;
+    max-width: 960px;
+    margin: 40px auto;
+  }
+  
+  .img-right {
+    float: right;
+    margin: 10px 0 10px 20px;
+    border: 1.5px solid #F2385A;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  
+  .img-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 1.5px solid #F2385A;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  
+  .img-center {
+    display: block;
+    margin: 20px auto;
+    border: 1.5px solid #F2385A;
+    padding: 5px;
+    border-radius: 50px;
+  }
+  
+  /*  ---------------Global Styles-----------------  */
+  body {
+    font-family: "Mulish", sans-serif;
+    margin: 0;
+  }
+  
+  header.primary {
+    background-color: #8C0303;
+    background-color: #8c0303;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%230d0d0d' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  
+    color: #BF9663;
+    text-shadow: 1.5px 1.5px #000000;
+    /*long form*/
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    /*Single value short hand*/
+    padding: 40px;
+    /* T,R,B,L */
+    padding: 20px 40px 20px 40px;
+    /* Two Value Top/Bottom / L/R */
+    padding: 20px 40px;
+    text-align: center;
+  }
+  
+  header.primary h1 {
+    font-size: 2.4rem;
+    margin: 20px 0 0;
+  }
+  
+  header.primary h1 a {
+    color: #BF9663;
+    text-decoration: none;
+  }
+  
+  header.primary h2 {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+  
+  nav.primary {
+    max-width: 960px;
+    margin: auto;
+  }
+  nav.primary ul {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  nav.primary ul li {
+    list-style-type: none;
+  }
+  nav.primary ul li a {
+    color: #BF9663;
+    text-decoration: none;
+    border: 1.5px solid #BF0413;
+    padding: 7.5px 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: 0.4s;
+  }
+  
+  nav.primary ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  #intro {
+    line-height: 1.6;
+  }
+  
+  #intro h2 {
+    color: #8C0303;
+    border-bottom: 1.5px dotted black;
+  }
+  
+  #content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    border-top: 1.5px dotted #F2385A;
+    border-bottom: 1.5px dotted #F2385A;
+    padding: 2.6rem 0;
+  }
+  
+  #content article.post {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    transition: 0.4s;
+  }
+  
+  #content article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  time.post-date,
+  figcaption {
+    text-transform: uppercase;
+    color: #F2385A;
+  }
+  
+  #content a {
+    color: #8C0303;
+  }
+  
+  #content article.post figure {
+    margin: 0;
+  }
+  
+  #practice h2 {
+    color: #8C0303;
+    border-bottom: 1.5px dotted #BF0413;
+  }
+  
+  #practice a {
+    color: #8C0303;
+    transition: 0.4s;
+  }
+  
+  #practice a:hover {
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  
+  #practice h3 {
+    border-left: 7.5px solid #8C0303;
+    padding: 3.5px 10px;
+  }
+  
+  table {
+    width: 100%;
+    border: 1.5px solid #F2385A;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  caption {
+    font-weight: bold;
+    margin: 10px;
+  }
+  tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  tr:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  th {
+    background-color: #0D0D0D;
+    color: #BF9663;
+    padding: 7.5px;
+  }
+  td {
+    border: 1.5px solid #F2385A;
+    padding: 5px;
+  }
+  
+  td:nth-child(2),
+  td:nth-child(3) {
+  }
+  
+  td:nth-child(n + 2) {
+    text-align: right;
+  }
+  
+  #practice ol{
+    list-style-type:lower-alpha;
+  }
+  
+  #practice ul{
+    list-style-type:square;
+  }
+  
+  #practice ul li ul{
+    list-style-type:disc;
+  }
+  
+  #practice dt{
+    font-weight:bold;
+    
+  }
+  
+  #practice dd{
+    margin:0;
+  }
+  
+  dd + dt{
+    margin-top:1rem;
+  }
+  
+  blockquote {
+    border: 4px double #F2385A;
+    padding: 20px 40px;
+    background-color: #0D0D0D;
+    color:#BF9663;
+    border-radius: 30px 0;
+    margin:40px 80px;
+    line-height: 1.4;
+  }
+  
+  cite{
+    display:block;
+    text-align:right;
+    font-size:.7rem;
+    margin-top:1rem;
+  }
+  
+  aside[role="complementary"] {
+    background-color: #0D0D0D;
+    color: #BF9663;
+    padding: 40px 0;
+  }
+  
+  aside .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 60px;
+  }
+  
+  aside a {
+    color: #BF9663;
+  }
+  
+  aside a:last-of-type {
+    color: #BF9663;
+    display: block;
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  aside .widget footer {
+    display: none;
+  }
+  
+  footer#colophon.primary {
+    background-color: #8C0303;
+    background-color: #8c0303;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%230d0d0d' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    padding: 10px;
+    text-align: center;
+    color: #BF9663;
+    font-size: 1.3rem;
+  }
+  
+  /* --------- Media Queries ----------- */
+  
+  @media screen and (max-width: 600px) {
+    nav.primary ul {
+      flex-direction: column;
+      gap: 10px;
+      max-width: 250px;
+      margin: 10px auto;
+    }
+    nav.primary ul a {
+      display: block;
+    }
+    aside .container {
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    #content {
+      flex-direction: column;
+    }
+  }
+  
